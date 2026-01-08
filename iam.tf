@@ -58,3 +58,13 @@ resource "aws_iam_role_policy" "lambda_perms" {
     ]
   })
 }
+## ill use these for now, ill probs narrow it down more later
+resource "aws_iam_role_policy_attachment" "lambda_basic" {
+  role       = aws_iam_role.lambda_exec.name
+  policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+}
+
+resource "aws_iam_role_policy_attachment" "ecs_basic" {
+  role       = aws_iam_role.ecs_exec.name
+  policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"
+}
