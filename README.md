@@ -1,6 +1,6 @@
 ## Project Plan
 
-The goal of this project is to create a practical solution for optimizing CI/CD workflows. Industry costs for runners can rack up quickly if they are left running constantly. I read that it is more cost-efficient to have AWS host the runners using **EC2 Spot Instances** that die after a job is done. Im going to try that wirh fargate spot/ecs as i beleive i might be able to save costs this way
+The goal of this project is to create a practical solution for optimizing CI/CD workflows. Industry costs for runners can rack up quickly if they are left running constantly. I read that it is more cost-efficient to have AWS host the runners using **Spot pricing** that die after a job is done. Im going to try that wirh fargate spot/ecs as i beleive i might be able to save costs this way
 
 I mainly wanted to do this project because I think resume projects should solve a problem that is actually faced in the job you are going for. It shouldn't just be a project that shows you know the services, but one that shows you know how to figure out problems and work with the services in the context of the role.
 
